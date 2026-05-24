@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  background: #121212;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.app {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 300px;
+  background: #1e1e1e;
+  padding: 20px;
+  overflow-y: auto;
+  border-right: 2px solid #333;
+}
+
+.game-area {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+canvas {
+  background: #202020;
+  border: 3px solid #444;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  background: #2d2d2d;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background: #3f3f3f;
+}
+
+.piece-item {
+  padding: 8px;
+  margin-bottom: 8px;
+  background: #2a2a2a;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.piece-item:hover {
+  background: #404040;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Large Blokus</title>
+
+  <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+  <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="app">
+  <div class="sidebar">
+    <h1>Large Blokus</h1>
+
+    <div class="controls">
+      <button id="rotateBtn">Rotate</button>
+      <button id="flipBtn">Flip</button>
+      <button id="nextBtn">Next Piece</button>
+    </div>
+
+    <div class="player-info">
+      <h2 id="currentPlayer">Current Player: Blue</h2>
+    </div>
+
+    <div id="pieceList"></div>
+  </div>
+
+  <div class="game-area">
+    <canvas id="gameCanvas" width="1100" height="1100"></canvas>
+  </div>
+</div>
+
+<py-config>
+packages = []
+</py-config>
+
+<py-script src="main.py"></py-script>
+
+</body>
+</html>
