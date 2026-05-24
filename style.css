@@ -1,58 +1,47 @@
 body {
   margin: 0;
-  background: #121212;
-  color: white;
-  font-family: Arial, sans-serif;
-}
-
-.app {
-  display: flex;
-  height: 100vh;
-}
-
-.sidebar {
-  width: 300px;
-  background: #1e1e1e;
-  padding: 20px;
-  overflow-y: auto;
-  border-right: 2px solid #333;
-}
-
-.game-area {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  font-family: sans-serif;
+  touch-action: none;
+  overscroll-behavior: none;
+  background: #111;
 }
 
 canvas {
-  background: #202020;
-  border: 3px solid #444;
+  width: 100vw;
+  height: 100vw;
+  max-height: 100vh;
+  display: block;
+  background: #111;
+}
+
+.controls {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 10;
 }
 
 button {
-  width: 100%;
-  padding: 12px;
-  margin-bottom: 10px;
-  background: #2d2d2d;
-  color: white;
-  border: none;
-  cursor: pointer;
-  font-size: 16px;
+  margin: 5px;
+  padding: 10px;
+  font-size: 14px;
 }
 
-button:hover {
-  background: #3f3f3f;
+#pieceList {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-height: 35vh;
+  overflow-y: auto;
+  background: white;
+  padding: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .piece-item {
-  padding: 8px;
-  margin-bottom: 8px;
-  background: #2a2a2a;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
   cursor: pointer;
-  border-radius: 6px;
-}
-
-.piece-item:hover {
-  background: #404040;
 }
