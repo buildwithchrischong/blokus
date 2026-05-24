@@ -1,5 +1,13 @@
-from js import document
+from js import document, console
+from pyodide.ffi import create_proxy
+import math
 
+canvas = document.querySelector("#gameCanvas")
+
+if canvas is None:
+    raise Exception("Canvas element #gameCanvas not found")
+
+ctx = canvas.getContext("2d")
 
 def move_handler(event):
     rect = canvas.getBoundingClientRect()
